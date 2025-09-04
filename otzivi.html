@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+	
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PPS отзывы</title>
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+	
+	
+<body>
+	<header class="header">
+        <div class="logo"> <a href="Index.html">PPS</a> </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home">о компании</a></li>
+                <li class="nav-item"><a href="#about">услуги</a></li>
+                <li class="nav-item"><a href="otzivi.html">отзывы</a></li>
+				
+				<li class="zapis" style="padding-left: 4vw;"><a href="zapis.html">запись </a> </li>
+                
+				
+            </ul>
+        </nav>
+    </header>
+	
+	
+	<main>
+		<section id="1" style="padding-top: 8%">
+		
+		<h2> Что говорят хвостатые клиенты и их владельцы </h2>
+			
+			<p style="padding-top: 7%; padding-left: 22.5%"> <strong>до/после </strong> </p >
+		<div class="setka" style="padding-top: 2%;">
+			
+			
+			<img src="photo/31a507352b82556ffdc546c4deeb7717.jpg" alt="Роскошный кошачий маникюр" >
+			<img src="photo/2617d33b4c1c1dd7ac919e816f01e817.jpg" alt="Роскошный кошачий маникюр" style="justify-self: end;">
+			<p>
+			<strong>Анна и кошка Белла 
+				</strong>
+<br><br>
+"Белла обожает свою ежемесячную укладку в Purrfect Paws Spa. Шерсть всегда гладкая и блестящая, а бантики, которые ей делают, — это просто восторг! Спасибо за невероятный уход!" </p>
+			
+			
+			
+			
+			<img src="photo/c96cabe154b4a35783b452e73a922604.jpg" alt="Роскошный кошачий маникюр" >
+			<img src="photo/1f94dc94986d7eeb025c9982acb444e0.jpg" alt="Роскошный кошачий маникюр" style="justify-self: end;">
+			<p>
+			<strong>Дмитрий и кот Лев  
+				</strong>
+<br><br>
+"Мы с Львом были на его первой вечеринке, которую организовали в спа. Это было незабываемо! Лев был 
+в смокинге, а все коты веселились, 
+как будто это их королевский бал. Никогда не видел своего кота таким счастливым!" </p>
+			
+			
+			
+			
+			<img src="photo/c41019bdb12b4c7cc572abb5ac4fbeb4.jpg" alt="Роскошный кошачий маникюр" >
+			<img src="photo/02fa0d905a1c1befe3c1ee698456e3c5.jpg" alt="Роскошный кошачий маникюр" style="justify-self: end;">
+			<p>
+			<strong>Екатерина и кошка Маруся
+				</strong>
+<br><br>
+
+"Маруся обычно очень боится стрижек, 
+но в Purrfect Paws Spa ей было так спокойно. Я была поражена, 
+как профессионально и нежно с ней обращались. Теперь она выглядит просто как королева!"</p>
+				
+			
+			
+			
+			</div>
+		</section>
+		
+		<script>
+						// Получаем все изображения
+			const images = document.querySelectorAll('.setka img');
+
+			// Функция, которая определяет, находятся ли два изображения в одной строке
+			function areImagesInSameRow(img1, img2) {
+				const rect1 = img1.getBoundingClientRect();
+				const rect2 = img2.getBoundingClientRect();
+				return rect1.top === rect2.top; // Проверяем, совпадает ли верхняя граница
+			}
+
+			// Добавляем обработчики для всех изображений
+			images.forEach((image, index) => {
+				image.addEventListener('mouseover', () => {
+					images.forEach((otherImage, otherIndex) => {
+						if (index !== otherIndex && areImagesInSameRow(image, otherImage)) {
+							// Увеличиваем ширину текущей картинки
+							image.classList.add('expand-width');
+							// Уменьшаем соседнюю картинку полностью
+							otherImage.classList.add('shrink');
+						}
+					});
+				});
+
+				image.addEventListener('mouseout', () => {
+					// Сбрасываем все изменения
+					images.forEach(img => {
+						img.classList.remove('expand-width', 'shrink');
+					});
+				});
+			});
+
+
+    </script>
+		
+	</main>	
+	
+	<footer>
+		
+		<div class="flex_dla_foot_1"> 
+		<p> контакты</p>
+		<div class="flex_dla_foot_2">
+			
+			<div class="flex_dla_foot_3">  
+				 <a href="#about"><img src="photo/seti/tg.png" alt="Роскошный кошачий маникюр" >
+				 телеграмм </a>
+			</div>
+				
+			<div class="flex_dla_foot_3">
+				<a href="#about"> <img src="photo/seti/vk.png" alt="Роскошный кошачий маникюр" >
+				 vkонтакте </a>
+			</div>
+			<br> 
+			<div class="flex_dla_foot_3">
+				<a href="#about"> <img src="photo/seti/pochta.png" alt="Роскошный кошачий маникюр" >
+				 pochta.ru </a>
+			</div>
+			
+			<div class="flex_dla_foot_3">
+				<a href="#about"> <img src="photo/seti/phone.png" alt="Роскошный кошачий маникюр" >			
+				 8 (987) 654 32-10 </a>
+			</div> 
+			
+			<div class="flex_dla_foot_3" style="align-self: flex-end;">
+			<div class="avtor" style="align-self: flex-end; padding-left: 7vw">
+			<a href="#about"> &copy;KorshunovaYulia </a>
+			</div>
+			</div>
+		</div>
+		</div>	
+	</footer>
+	
+</body>
+</html>

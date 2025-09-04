@@ -1,0 +1,518 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+    font-family: 'Viaoda Libre';
+    src: url('fonts/viaoda-libre-regular1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('fonts/Onest-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+
+
+body {
+	font-family: 'Onest',  sans-serif;
+	color: #2F4157;
+	font-weight: 100;
+	margin: 0 ; /* Отменяем отступы Bootstrap */
+    padding: 0 ;
+	background-color: white;
+	}
+	.logo, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Viaoda Libre';
+}
+
+.header {
+    display: flex;
+	flex-wrap: nowrap; 
+    justify-content: space-between; /* Пространство между логотипом и меню */
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #2F4157;
+    border-bottom: 2px solid #2F4157;
+	padding: 0 14.5% ;
+	margin: 0;
+	position: fixed;
+    left: 0;
+    right: 0;
+}
+
+/* Стили для логотипа */
+.logo {
+    font-size: 3em;
+    font-weight: 100;
+	color: #2F4157;
+}
+	
+.logo a {
+    text-decoration: none;
+	color: #2F4157;
+}
+
+.logo a:hover {
+    text-decoration: none;
+    font-weight: bold;      
+}
+
+.logo a:active {
+    text-decoration: none;
+    font-weight: bold;
+	color: black;
+}
+	
+.nav-list, .nav-item a {
+    font-family: 'Onest', sans-serif;
+    font-weight: 100; 
+    text-decoration: none;
+	
+}
+/* Стили для навигации */
+.nav-list {
+    display: flex;
+	align-items: center;
+    list-style: none;   
+	flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+	font-size: 1.8em;
+	}
+.nav-item {
+    padding-left: 4vw;          /* Отступы между пунктами меню */
+}
+
+.nav-item a {
+    color: #2F4157;
+    text-decoration: none;        
+
+}
+
+.nav-item a:hover {
+    font-weight: 300;           
+}
+.nav-item a:active {
+    font-weight: 300;
+	color: black;
+}	
+.zapis {
+	display: flex;
+	font-weight: 300;
+
+	
+}
+.zapis a{
+	text-decoration: none; 
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+    color: #2F4157;
+	font-weight: 300;
+	border: 2px solid #2F4157;
+	border-radius: 12px; 
+	width: 165px;
+	height: 42px;
+
+}
+	
+.zapis a:hover{
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	border-radius: 12px; 
+	border: 2px solid #2F4157;
+    background-color: #2F4157;
+    color: white;
+	text-decoration: none;
+
+}
+		
+.zapis a:active{
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+	border-radius: 12px; 
+	border: 2px solid black;
+    background-color: black;
+    color: white;
+	text-decoration: none;
+
+}
+									 /* шапка кончилась */
+	main {
+		font-family: 'Onest', sans-serif;
+		padding: 0% 14.5%;
+		font-size: 1.6em;
+		color: #2F4157;
+		margin: 0px;
+	}
+	
+	
+
+h1 {
+	font-size: 6.2em;
+	line-height: 0.9; 
+	    margin: 0;
+    padding: 0;
+	}
+
+
+h2 {
+	font-size: 3em;
+	    margin: 0;
+    padding: 0;
+	}
+	
+	
+
+.container{border: 2px solid #2F4157;
+	border-radius: 12px; 
+	padding: 3% 8%;}
+	
+
+/* вводимые поля */
+	.custom-input {
+		
+		 width: 100%;
+    font-weight: 150; 
+		line-height: 0.5;
+		font-size: 1.6rem;
+		color: #C7D9E5;
+            border: none; /* Убираем стандартную рамку */
+            border-bottom: 2px solid #2F4157; /* Только нижняя черта */
+		border-radius: 0px;
+            outline: none; /* Убираем обводку при фокусе */
+            transition: 0.3s ease, color 0.3s ease; /* Анимация для взаимодействий */
+        }
+        .custom-input:focus {
+			box-shadow: none;
+			border-bottom: 2px solid #2F4157; 
+        }
+        .custom-input:not(:placeholder-shown) {
+            color: #2F4157; /* Изменение цвета текста, если поле заполнено */
+        }
+
+
+/* галочкаа */
+	.form-check-input {
+				border: 2px solid #2F4157;
+			}
+	.form-check-input:focus {
+				box-shadow: none;
+				border: 2px solid #2F4157;
+			}
+	.form-check-input:checked {
+			  background-color: #2F4157; /* Темно-синий цвет */
+			  border-color: #2F4157; /* Чтобы граница совпадала с фоном */
+			}
+
+
+	.form-check-label { /* для текста около галочки */
+		color: #2F4157;
+		font-size: 1rem;
+		font-weight: 400; 
+	}
+/* выдвижной список */
+		.form-select {
+			
+		 width: 70%;
+    font-weight: 150; 
+		font-size: 1.6rem;
+		color: #577C8E;
+            border: none; /* Убираем стандартную рамку */
+            border-bottom: 2px solid #2F4157; /* Только нижняя черта */
+		border-radius: 0px;
+            outline: none; /* Убираем обводку при фокусе */
+            transition: 0.3s ease, color 0.3s ease; 
+			
+		}
+		        .form-select:focus {
+			box-shadow: none;
+			border-bottom: 2px solid #2F4157; 
+        }
+        .form-select:not(:placeholder-shown) {
+            color: #2F4157; /* Изменение цвета текста, если поле заполнено */
+        }
+		.form-select option {
+			
+			font-weight: 150; 
+			font-size: 1.6rem; 
+			color: #2F4157; 
+			border: 2px solid #2F4157; 
+			
+		}
+		.form-select option:checked {
+    border-bottom: 2px solid #2F4157; 
+}
+
+/* календарь плаки плаки */
+		.calendar { 
+		background-color: #C7D9E5;
+		padding: 3%;
+		border-radius: 12px;
+			width: 100%;
+			height: 32vh;
+			font-size: 1rem;
+			font-weight: 200;
+			
+		}
+
+		.header2 {
+    display: flex;
+    justify-content: space-between;
+	margin-bottom: -0.6%;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #2F4157; /* Цвет текста в заголовке */
+}
+
+.header2 button {
+    background: none;
+    border: none;
+    color: #2F4157;
+    cursor: pointer;
+}
+
+.header2 button:hover {
+    color: #EAF2F8; /* Лёгкий эффект наведения на стрелки */
+}
+
+.weekdays,
+.days {
+    display: grid;
+	padding: 0 7%;
+	font-size: 0.9rem;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10%; /* 7 равных столбцов */
+	column-gap: 5%;
+	
+}
+
+
+.weekdays div {
+    text-align: center;
+    color: #577C8E; /* Цвет дней недели */
+	font-weight: 150;
+}
+
+.days div {
+    text-align: center;
+    padding: 4%;
+    border-radius: 50%; /* Круг вокруг каждой цифры */
+    border: 1px solid #C7D9E5; /* Цвет совпадает с фоном */
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    color: #2F4157;
+    cursor: pointer;
+}
+
+.days div:hover {
+    border-color: #2F4157; /* Видимая обводка при наведении */
+}
+
+.days div.selected {
+    background-color: #2F4157; /* Синий фон выбранного числа */
+    color: white; /* Белая цифра */
+}
+
+.days div.other-month {
+    color: #577C8E; /* Более светлый цвет для дней других месяцев */
+    border-color: #C7D9E5; /* Обводка остаётся невидимой */
+    cursor: not-allowed;
+}
+
+.days div:hover.other-month {
+    border-color: #577C8E; /* Не выделяются числа других месяцев */
+}
+
+/* окно с окошками на запись услуг */
+		.okoshki { 
+			
+			background-color: #C7D9E5;
+		border-radius: 12px;
+			padding: 1.5vh 3vw 1.5vw;
+			width: 100%;
+			height: 32vh;
+			display: grid;
+			grid-template: 20% 80% / 30% 70% ;
+			font-weight: 150; 
+			font-size: 1.6rem; 
+			color: #2F4157; 
+		}
+		
+		.flex_okoshki{
+			display: flex;
+			align-items: flex-start;
+				flex-direction: column;
+			font-size: 1rem;
+			color: #577C8E;
+			line-height: 1.2;
+		}
+		
+		.form-select2 {
+			width: 100%;
+    font-weight: 150; 
+		color: #577C8E;
+            border: none; /* Убираем стандартную рамку */
+            border-bottom: 2px solid #2F4157; /* Только нижняя черта */
+		border-radius: 0px;
+            outline: none; /* Убираем обводку при фокусе */
+            transition: 0.3s ease, color 0.3s ease; 
+			background-color: #C7D9E5;
+		}
+		        .form-select2:focus {
+			box-shadow: none;
+			border-bottom: 2px solid #2F4157; 
+        }
+        .form-select2:not(:placeholder-shown) {
+            color: #2F4157; /* Изменение цвета текста, если поле заполнено */
+        }
+		.form-select2 option {
+			
+			font-weight: 150; 
+			font-size: 1.6rem; 
+			color: #2F4157; 
+			border: 2px solid #2F4157; 
+			
+		}
+		.form-select2 option:checked {
+    border-bottom: 2px solid #2F4157; 		
+}
+
+/* переключалка онлайн/оффлайн */
+.toggle-switch .btn {
+	
+    font-weight: 250; 
+	font-size: 1.6rem; 
+  border-radius: 12px; 
+  padding: 0.1rem 1.5rem; /* Пространство для текста */
+	border: 2px solid #2F4157;
+}
+
+.toggle-switch .btn-outline-primary {
+  color: #2F4157; /* Цвет текста оффлайна */
+  border-color: #2F4157; /* Цвет границы */
+  background-color: white; /* Белый фон */
+}
+
+.toggle-switch .btn-primary {
+  background-color: white; 
+  color: #2F4157;  
+  border-color: #2F4157; /* Чтобы граница совпадала */
+}
+
+.toggle-switch .btn-check:checked + .btn-primary,
+.toggle-switch .btn-check:checked + .btn-outline-primary {
+  /* Убираем тень */
+	background-color: #2F4157; 
+	border-color: #2F4157; 
+}
+
+.toggle-switch .btn:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; /* Снимаем закругление с правой стороны */
+}
+
+.toggle-switch .btn:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; /* Снимаем закругление с левой стороны */
+}
+.toggle-switch .btn:hover {
+  box-shadow: none; /* нафиг подсветку */
+  border-color: #2F4157;
+	background-color: white; 
+	color: #2F4157;
+	font-weight: 400; /* Сохраняем цвет текста */
+}
+
+.perekluchalka{
+	display: flex; width: 115%; justify-content: flex-end; align-items: flex-start; gap: 5%
+	
+}
+
+	
+
+/* Футоррр */
+	footer {
+		background-color: #C7D9E5;
+		padding: 0% 14.5%;
+		font-size: 1.6em;
+		
+		margin: 7.5% 0 0 0;
+		font-weight: 300;
+		color: #2F4157;
+	}
+	
+	.flex_dla_foot_1 {
+		display: flex;
+		padding: 8vh 0;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.flex_dla_foot_2 {
+		display: flex;
+		font-weight: 100;
+		margin: 0px;
+		padding: 0px;
+		flex-flow: row wrap;
+		align-items: center;
+		column-gap: 4vw;
+	}
+		.flex_dla_foot_2 p{
+		font-weight: 100;
+	}
+	
+	.flex_dla_foot_3 {
+		padding: 1% 0 0 0;
+		margin: 0px;
+		width: 310px;
+		display: flex;
+		font-weight: 100;
+		align-items: center;
+	}
+		.flex_dla_foot_3 a{
+					padding: 1% 0 0 0;
+		margin: 0px;
+		width: 310px;
+		display: flex;
+		font-weight: 100;
+		align-items: center;
+		gap: 1vw;
+
+		color: #2F4157;
+		    
+
+    	text-decoration: none;
+	}
+	.flex_dla_foot_3 a:hover {
+    font-weight: 300;   
+		
+}
+		.flex_dla_foot_3 a:active {
+    font-weight: 300;
+			color: black;
+}
+	
+		.flex_dla_foot_3 img{
+		width: 75px; height: 83px;
+		border-radius: 12px;
+		transition: 0.3s; 
+		
+	}
+			.flex_dla_foot_3 img:hover{
+		filter: brightness(0.7);
+		
+	}
+	
+			.flex_dla_foot_3 img:active{
+		filter: brightness(0.5);
+		
+	}
+	
+
+	
